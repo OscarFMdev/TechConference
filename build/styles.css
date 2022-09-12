@@ -1,12 +1,3 @@
-/* FONTS */
-/* SCREEN SIZES */
-/* COLORS */
-/* program bg */
-/* IMAGES PATHS */
-/* project logo */
-/* backgrounds */
-/* icons */
-/* speakers */
 html {
   box-sizing: border-box;
 }
@@ -25,15 +16,6 @@ html {
   align-items: center;
 }
 
-/* FONTS */
-/* SCREEN SIZES */
-/* COLORS */
-/* program bg */
-/* IMAGES PATHS */
-/* project logo */
-/* backgrounds */
-/* icons */
-/* speakers */
 blockquote {
   color: orangered;
   margin-bottom: 5px;
@@ -106,15 +88,6 @@ blockquote {
   margin: 0;
 }
 
-/* FONTS */
-/* SCREEN SIZES */
-/* COLORS */
-/* program bg */
-/* IMAGES PATHS */
-/* project logo */
-/* backgrounds */
-/* icons */
-/* speakers */
 #program {
   background-size: cover;
   background-color: #282b32;
@@ -131,6 +104,53 @@ blockquote {
   font-weight: 400;
   position: relative;
   top: 30px;
+}
+
+.about-introduction {
+  background-color: white;
+  filter: brightness(115%);
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 16px 5px;
+}
+.about-introduction p {
+  text-align: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-box .contact-about {
+  text-align: center;
+}
+.contact-box .email {
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#about-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  background-size: cover;
+}
+#about-body .program-heading {
+  text-align: center;
+  width: 200px;
+}
+#about-body .line {
+  height: 1px;
+  width: 20px;
+  background-color: orangered;
 }
 
 /*# sourceMappingURL=styles.css.map */
