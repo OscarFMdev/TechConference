@@ -1,11 +1,33 @@
-//Fonts
-$PrimaryFont: 'Lato', sans-serif;
-$HeaderFont: 'Asset', cursive;
+//FONTS
+$primary-font: 'Lato', sans-serif;
+$header-font: 'Asset', cursive;
 
-//Screen sizes
-$Desktop: 768px;
+//SCREEN SIZES
+$desktop-size: 768px;
 
-//Colors
-$Black: #272a31;
-$Orange: #ec5242;
-$Gray: #d3d3d3;
+//COLORS
+$black: #272a31;
+$orange: #ec5242;
+$gray: #d3d3d3;
+
+//IMAGES PATHS
+
+/*backgrounds*/
+$mobile-bg: '../src/img/backgrounds/mobile-bg.png';
+$desktop-bg: '../src/img/backgrounds/desktop-bg.png';
+$bag-pattern: '../src/img/backgrounds/pattern_bg.png';
+
+/*icons*/
+$icon-1: '../src/img/icons/program_icon_01.png';
+$icon-2: '../src/img/icons/program_icon_02.png';
+$icon-3: '../src/img/icons/program_icon_03.png';
+$icon-4: '../src/img/icons/program_icon_04.png';
+$icon-5: '../src/img/icons/program_icon_05.png';
+
+/*Speakers*/
+$microverse: '../src/img/speakers/ariel-camus-microverse.jpeg';
+$airbnb: '../src/img/speakers/brian-chesky-airbnb.jpg';
+$linkedin: '../src/img/speakers/jeff-weiner-linkedin.jpg';
+$github: '../src/img/speakers/leadership-nat-friedman-github.jpg';
+$meta: '../src/img/speakers/Mark_Zuckerberg.jpg';
+$google: '../src/img/speakers/Sundar_pichai_google.png';
