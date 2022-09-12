@@ -1,15 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# First Capstone
 
-> Description the project.
+The goal of this project is to create a webpage using guidelines from Behance.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Behance
+- Git
+- Linux terminal
+- SCSS
 
 ## Live Demo (if available)
 
@@ -22,7 +25,7 @@
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
-To get a local copy up and running follow these simple example steps.
+<!-- To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -34,23 +37,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
-### Deployment
+### Deployment -->
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Oscar Fernández Muñoz**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/OscarFmdev)
+- Twitter: [@twitterhandle](https://twitter.com/OscarFMdev)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/OscarFMdev)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,12 +62,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- To Cindy Shin to let us practice with her design https://www.behance.net/adagio07
+- To my coding partners who help me with webpage issues during the design process.
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
