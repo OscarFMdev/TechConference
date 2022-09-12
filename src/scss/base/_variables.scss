@@ -1,6 +1,6 @@
 //FONTS
 $primary-font: 'Lato', sans-serif;
-$header-font: 'Asset', cursive;
+$header-font: 'Montserrat', sans-serif;
 
 //SCREEN SIZES
 $desktop-size: 768px;
@@ -13,6 +13,7 @@ $gray: #d3d3d3;
 //IMAGES PATHS
 
 /*backgrounds*/
+$header-bg: '../src/img/backgrounds/code-bg.jpeg';
 $mobile-bg: '../src/img/backgrounds/mobile-bg.png';
 $desktop-bg: '../src/img/backgrounds/desktop-bg.png';
 $bag-pattern: '../src/img/backgrounds/pattern_bg.png';
