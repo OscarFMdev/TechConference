@@ -33,7 +33,8 @@ blockquote {
 #header {
   background-image: url($mobile-bg);
   background-size: cover;
-  height: 80vh;
+  background-repeat: no-repeat;
+  height: 87vh;
 
   @media only screen and (min-width: $desktop-size) {
     background-image: url($desktop-bg);
@@ -52,5 +53,27 @@ blockquote {
   border: 5px solid white;
   p {
     width: 90%;
+  }
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  background-color: $gray;
+  filter: brightness(115%);
+  padding: 0 10px 15px 0;
+  text-align: center;
+  align-content: space-around;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid white;
+  .date {
+    font-weight: bolder;
+    margin-bottom: 7px;
+  }
+
+  .salon {
+    margin: 0;
   }
 }

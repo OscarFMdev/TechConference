@@ -18,6 +18,12 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* FONTS */
 /* SCREEN SIZES */
 /* COLORS */
@@ -53,7 +59,8 @@ blockquote {
 #header {
   background-image: url("../src/img/backgrounds/mobile-bg.png");
   background-size: cover;
-  height: 80vh;
+  background-repeat: no-repeat;
+  height: 87vh;
 }
 @media only screen and (min-width: 768px) {
   #header {
@@ -74,6 +81,27 @@ blockquote {
 }
 .introduction p {
   width: 90%;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  background-color: #d3d3d3;
+  filter: brightness(115%);
+  padding: 0 10px 15px 0;
+  text-align: center;
+  align-content: space-around;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid white;
+}
+.place .date {
+  font-weight: bolder;
+  margin-bottom: 7px;
+}
+.place .salon {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
