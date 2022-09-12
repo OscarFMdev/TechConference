@@ -1,0 +1,21 @@
+@import '../base/variables';
+
+#program {
+  background-size: cover;
+  background-color: $program-bg;
+  height: 100vh;
+  
+  .cross-bg {
+    background-image: url($bg-pattern);
+    height: 100vh;
+    z-index: 2;
+    
+  }
+  .program-heading {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 30px;
+  }
+}

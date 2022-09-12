@@ -1,6 +1,7 @@
 /* FONTS */
 /* SCREEN SIZES */
 /* COLORS */
+/* program bg */
 /* IMAGES PATHS */
 /* project logo */
 /* backgrounds */
@@ -27,6 +28,7 @@ html {
 /* FONTS */
 /* SCREEN SIZES */
 /* COLORS */
+/* program bg */
 /* IMAGES PATHS */
 /* project logo */
 /* backgrounds */
@@ -102,6 +104,33 @@ blockquote {
 }
 .place .salon {
   margin: 0;
+}
+
+/* FONTS */
+/* SCREEN SIZES */
+/* COLORS */
+/* program bg */
+/* IMAGES PATHS */
+/* project logo */
+/* backgrounds */
+/* icons */
+/* speakers */
+#program {
+  background-size: cover;
+  background-color: #282b32;
+  height: 100vh;
+}
+#program .cross-bg {
+  background-image: url("../src/img/backgrounds/pattern_bg.png");
+  height: 100vh;
+  z-index: 2;
+}
+#program .program-heading {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
