@@ -23,8 +23,9 @@ blockquote {
   margin-bottom: 5px;
   padding-top: 20px;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 9px;
   margin-right: 5px;
+  justify-self: baseline;
 }
 
 .header {
@@ -33,6 +34,12 @@ blockquote {
   color: orangered;
   text-align: center;
   margin-top: 0;
+  width: 300px;
+}
+.header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header span {
   background-image: url("../src/img/backgrounds/code-bg.jpeg");
@@ -42,15 +49,32 @@ blockquote {
   font-size: 35px;
   font-weight: bolder;
 }
+@media only screen and (min-width: 768px) {
+  .header span {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 80px;
+    width: 600px;
+  }
+}
+
 #header {
   background-image: url("../src/img/backgrounds/mobile-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 768px) {
   #header {
     background-image: url("../src/img/backgrounds/desktop-bg.png");
+    height: 90vh;
   }
 }
 
@@ -64,9 +88,15 @@ blockquote {
   justify-content: center;
   align-items: center;
   border: 5px solid white;
+  min-width: 300px;
 }
 .introduction p {
   width: 90%;
+}
+@media only screen and (min-width: 768px) {
+  .introduction {
+    font-size: 20px;
+  }
 }
 
 .place {
@@ -81,6 +111,12 @@ blockquote {
   justify-content: center;
   align-content: center;
   border: 5px solid white;
+  min-width: 500px;
+}
+@media only screen and (min-width: 768px) {
+  .place {
+    font-size: 50px;
+  }
 }
 .place .date {
   font-weight: bolder;
@@ -215,6 +251,7 @@ blockquote {
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container {
     flex-direction: row;
+    max-width: 1100px;
   }
 }
 

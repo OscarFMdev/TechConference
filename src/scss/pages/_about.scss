@@ -107,7 +107,7 @@
       }
       @media only screen and (min-width: $desktop-size) {
         flex-direction: row;
-        // position: relative;
+        max-width: 1100px;
       }
     }
   }
