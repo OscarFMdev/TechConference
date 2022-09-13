@@ -126,6 +126,43 @@ blockquote {
   margin: 0;
 }
 
+.cross-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programs-container {
+  display: grid;
+  margin-top: 60px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.programs-container img {
+  justify-self: center;
+}
+.programs-container .program-card {
+  display: grid;
+  justify-self: center;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 5fr;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 90%;
+}
+.programs-container .program-card .program-card-heading {
+  margin: 0;
+  align-self: center;
+  color: orangered !important;
+  font-weight: 700 !important;
+}
+.programs-container .program-card .program-desc {
+  color: white;
+}
+
 #program {
   background-size: cover;
   background-color: #282b32;
