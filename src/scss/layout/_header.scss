@@ -8,6 +8,10 @@ blockquote {
   margin-left: 9px;
   margin-right: 5px;
   justify-self: baseline;
+  @media only screen and (min-width: $desktop-size) {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .header {
@@ -54,7 +58,7 @@ blockquote {
 
   @media only screen and (min-width: $desktop-size) {
     background-image: url($desktop-bg);
-    height: 90vh;
+    height: 97vh;
   }
 }
 
@@ -100,42 +104,5 @@ blockquote {
 
   .salon {
     margin: 0;
-  }
-}
-
-.cross-bg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.programs-container {
-  display: grid;
-  margin-top: 60px;
-  row-gap: 10px;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  img {
-    justify-self: center;
-  }
-  .program-card {
-    display: grid;
-    justify-self: center;
-    width: 90%;
-    grid-template-columns: 1fr 1fr 5fr;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba($color: gray, $alpha: 0.4);
-    height: 90%;
-    .program-card-heading {
-      margin: 0;
-      align-self: center;
-      color: orangered !important;
-      font-weight: 700 !important;
-    }
-    .program-desc {
-      color: white;
-    }
   }
 }

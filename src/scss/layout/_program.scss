@@ -4,11 +4,20 @@
   background-size: cover;
   background-color: $program-bg;
   height: 100vh;
+  @media only screen and (min-width: $desktop-size) {
+    height: 42vh;
+  }
   
   .cross-bg {
     background-image: url($bg-pattern);
     height: 100vh;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: $desktop-size) {
+      height: 42vh;
+    }
     
   }
   .program-heading {
@@ -17,5 +26,53 @@
     font-weight: 400;
     position: relative;
     top: 30px;
+  }
+}
+
+.programs-container {
+  display: grid;
+  margin-top: 60px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  @media only screen and (min-width: $desktop-size) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: flex-start;
+  }
+  img {
+    justify-self: center;
+  }
+  .program-card {
+    display: grid;
+    justify-self: center;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 5fr;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: gray, $alpha: 0.4);
+    height: 90%;
+    @media only screen and (min-width: $desktop-size) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 80%;
+      .program-card:nth-child(4) {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .program-card-heading {
+      margin: 0;
+      align-self: center;
+      color: orangered !important;
+      font-weight: 700 !important;
+    }
+    .program-desc {
+      color: white;
+    }
   }
 }
