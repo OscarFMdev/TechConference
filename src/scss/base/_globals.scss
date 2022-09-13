@@ -1,6 +1,7 @@
 @import './variables';
 
-html {
+html {  
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -9,5 +10,6 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   font-family: $primary-font;
 }

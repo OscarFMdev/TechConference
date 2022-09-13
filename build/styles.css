@@ -1,4 +1,5 @@
 html {
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -7,6 +8,7 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
 
@@ -106,7 +108,7 @@ blockquote {
   top: 30px;
 }
 
-.about-introduction {
+.white-box {
   background-color: white;
   filter: brightness(115%);
   padding: 5px 10px;
@@ -117,7 +119,7 @@ blockquote {
   border: 1px solid gray;
   margin: 16px 5px;
 }
-.about-introduction p {
+.white-box p {
   text-align: center;
 }
 
@@ -151,6 +153,69 @@ blockquote {
   height: 1px;
   width: 20px;
   background-color: orangered;
+}
+#about-body .section-divider {
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  margin-top: 20px;
+}
+#about-body .past-conferences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about-body .past-conferences p {
+  text-align: center;
+}
+#about-body .past-conferences .conferences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#about-body .past-conferences .conferences-container .container {
+  position: relative;
+}
+#about-body .past-conferences .conferences-container .container .text-container .img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+}
+#about-body .past-conferences .conferences-container .container .text-container .img-header {
+  font-size: 30px;
+  top: 30%;
+  font-weight: 700;
+}
+#about-body .past-conferences .conferences-container .container .text-container .img-place {
+  font-size: 27px;
+}
+#about-body .past-conferences .conferences-container .bg {
+  background-color: red;
+  background-size: cover;
+  object-fit: cover;
+}
+#about-body .past-conferences .conferences-container .bg img {
+  overflow: hidden;
+  overflow: hidden;
+  mix-blend-mode: darken;
+  width: 90vw;
+  height: auto;
+}
+#about-body .past-conferences .conferences-container .bg:hover {
+  filter: grayscale(100%);
+}
+@media only screen and (min-width: 768px) {
+  #about-body .past-conferences .conferences-container {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

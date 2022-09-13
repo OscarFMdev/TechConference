@@ -1,6 +1,6 @@
 @import '../base/variables';
 
-.about-introduction {
+.white-box {
   background-color: white;
   filter: brightness(115%);
   padding: 5px 10px;
@@ -46,4 +46,69 @@
     background-color: orangered;
   }
 
+  .section-divider {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin-top: 20px;
+  }
+  .past-conferences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+    .conferences-container {
+      .container {
+        position: relative;
+        .text-container {
+          .img-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: white;
+          }
+          .img-header {
+            font-size: 30px;
+            top: 30%;
+            font-weight: 700
+          }
+          .img-place {
+            font-size: 27px;
+          }
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      .bg {
+        background-color: red;
+        background-size: cover;
+        object-fit: cover;
+        img {
+          overflow: hidden;
+          overflow: hidden;
+          mix-blend-mode: darken;
+          width: 90vw;
+          height: auto;
+        }
+        
+        &:hover {   
+          filter: grayscale(100%);
+        }
+      }
+      @media only screen and (min-width: $desktop-size) {
+        flex-direction: row;
+        // position: relative;
+      }
+    }
+  }
 }
