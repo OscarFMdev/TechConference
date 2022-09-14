@@ -43,15 +43,17 @@ body {
 
 .top-section {
   background-color: #272a31;
-  height: 20px;
+  height: 30px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .top-section ul {
   list-style: none;
   display: flex;
   column-gap: 30px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .top-section ul li {
   color: white;
@@ -83,11 +85,19 @@ body {
     column-gap: 30px;
     padding-left: 0;
   }
+  .nav-container ul li a {
+    text-decoration: none;
+    color: black;
+  }
 }
 @media only screen and (min-width: 768px) {
   .nav-container .hamburger {
     display: none;
   }
+}
+.nav-container .right-side {
+  display: flex;
+  justify-content: flex-end;
 }
 
 blockquote {
@@ -110,7 +120,7 @@ blockquote {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   background: #ff4500;
-  background: linear-gradient(to right, #ff4500 66%, #121fcf 100%);
+  background: linear-gradient(to right, hsl(21deg, 100%, 50%) 69%, hsla(236deg, 84%, 44%, 0.77) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -411,6 +421,11 @@ blockquote {
   background-color: orangered;
 }
 
+footer {
+  height: 100px;
+  background-color: #272a31;
+}
+
 .white-box {
   background-color: white;
   filter: brightness(115%);
@@ -499,6 +514,7 @@ blockquote {
 }
 #about-body .past-conferences .conferences-container .container .text-container .img-place {
   font-size: 27px;
+  min-width: 202.5px;
 }
 #about-body .past-conferences .conferences-container .bg {
   background-color: red;
@@ -511,6 +527,13 @@ blockquote {
   mix-blend-mode: darken;
   width: 90vw;
   height: auto;
+  min-width: 342px;
+  max-width: 419px;
+}
+@media only screen and (min-width: 768px) {
+  #about-body .past-conferences .conferences-container .bg img {
+    width: 40vw;
+  }
 }
 #about-body .past-conferences .conferences-container .bg:hover {
   filter: grayscale(100%);

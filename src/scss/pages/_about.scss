@@ -79,6 +79,7 @@
           }
           .img-place {
             font-size: 27px;
+            min-width: 202.5px;
           }
         }
       }
@@ -99,6 +100,11 @@
           mix-blend-mode: darken;
           width: 90vw;
           height: auto;
+          min-width: 342px;
+          max-width: 419px;
+          @media only screen and (min-width: $desktop-size) {
+            width: 40vw;
+          }
         }
         
         &:hover {   

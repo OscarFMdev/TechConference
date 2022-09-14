@@ -17,11 +17,22 @@
      list-style: none;
      column-gap: 30px;
      padding-left: 0;
+     li {
+      a{
+        text-decoration: none;
+        color: black;
+      }
+     }
     }
   }
   .hamburger {
     @media only screen and (min-width: $desktop-size) {
       display: none;
     }
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
   }
 }

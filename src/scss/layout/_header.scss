@@ -18,7 +18,7 @@ blockquote {
   font-family: $header-font;
   font-size: 28px;
   background: #ff4500;
-  background: linear-gradient(to right, #ff4500 66%, #121fcf 100%);
+  background: linear-gradient(to right, hsl(21, 100%, 50%, 1) 69%, hsl(236, 84%, 44%, 0.77) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
