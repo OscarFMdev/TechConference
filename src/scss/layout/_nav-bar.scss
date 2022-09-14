@@ -2,7 +2,7 @@
 
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 1.8fr;
+  grid-template-columns: 1fr 2.8fr;
   justify-content: space-around;
   align-items: center;
   @media only screen and (min-width: $desktop-size) {

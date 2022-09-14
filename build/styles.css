@@ -14,7 +14,7 @@ html {
 
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 1.8fr;
+  grid-template-columns: 1fr 2.8fr;
   justify-content: space-around;
   align-items: center;
 }
@@ -61,7 +61,10 @@ blockquote {
 .header {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
-  color: orangered;
+  background: #ff4500;
+  background: linear-gradient(to right, #ff4500 66%, #121fcf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 0;
   width: 300px;
@@ -95,16 +98,17 @@ blockquote {
   background-image: url("../src/img/backgrounds/mobile-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 87vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 @media only screen and (min-width: 768px) {
   #header {
     background-image: url("../src/img/backgrounds/desktop-bg.png");
     height: 97vh;
+    justify-content: center;
   }
 }
 
@@ -118,7 +122,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   border: 5px solid white;
-  min-width: 300px;
+  min-width: 200px;
 }
 .introduction p {
   width: 90%;
@@ -159,7 +163,7 @@ blockquote {
 #program {
   background-size: cover;
   background-color: #282b32;
-  height: 100vh;
+  height: 120vh;
 }
 @media only screen and (min-width: 768px) {
   #program {
@@ -168,7 +172,7 @@ blockquote {
 }
 #program .cross-bg {
   background-image: url("../src/img/backgrounds/pattern_bg.png");
-  height: 100vh;
+  height: 120vh;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -200,6 +204,7 @@ blockquote {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     align-items: flex-start;
+    max-width: 1000px;
   }
 }
 .programs-container img {
@@ -209,7 +214,7 @@ blockquote {
   display: grid;
   justify-self: center;
   width: 90%;
-  grid-template-columns: 1fr 1fr 5fr;
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.4);
@@ -235,6 +240,25 @@ blockquote {
 }
 .programs-container .program-card .program-desc {
   color: white;
+}
+
+.speaker-image-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.speaker-image-container .speaker-bg {
+  background-image: url("../src/img/speakers/speaker-bg.jpg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+}
+.speaker-image-container .speaker-image {
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .white-box {

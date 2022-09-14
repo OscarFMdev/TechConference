@@ -17,7 +17,10 @@ blockquote {
 .header {
   font-family: $header-font;
   font-size: 28px;
-  color: orangered;
+  background: #ff4500;
+  background: linear-gradient(to right, #ff4500 66%, #121fcf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 0;
   width: 300px;
@@ -50,15 +53,16 @@ blockquote {
   background-image: url($mobile-bg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 87vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   @media only screen and (min-width: $desktop-size) {
     background-image: url($desktop-bg);
     height: 97vh;
+    justify-content: center;
   }
 }
 
@@ -72,7 +76,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   border: 5px solid white;
-  min-width: 300px;
+  min-width: 200px;
   p {
     width: 90%;
   }
