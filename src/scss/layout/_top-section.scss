@@ -1,0 +1,20 @@
+@import '../base/variables';
+
+.top-section {
+  background-color: $black;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    margin-top: 0;
+    li {
+      color: white;
+    }
+    li:nth-child(3) {
+      margin-right: 50px;
+    }
+  }
+}

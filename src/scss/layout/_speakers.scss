@@ -1,22 +1,111 @@
 @import '../base/variables';
 
+#speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 5% 5%;
+  align-self: center;
+
+  @media only screen and (min-width: $desktop-size) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .upper-part {
+    display: flex;
+    @media only screen and (min-width: $desktop-size) {
+      height: 270px;
+      justify-content: space-around;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .lower-part {
+    margin-top: 0;
+    .speaker-introduction-mobile {
+      margin-top: 0;
+      display: block;
+      @media only screen and (min-width: $desktop-size) {
+        display: none;
+      }
+      
+    }
+  }
+  .speakers-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .speaker-introduction-desktop {
+      display: none;
+      @media only screen and (min-width: $desktop-size) {
+        display: block;
+        max-width: 715px;
+      }
+    }
+    .speaker-name {
+      font-weight: 400;
+      margin-bottom: 5px;
+      width: 80px;
+    }
+  
+    .speaker-company {
+      font-weight: 400;
+      margin-top: 0px;
+      color: orangered;
+    }
+  }
+}
 
 .speaker-image-container {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   position: relative;
+  @media only screen and (min-width: $desktop-size) {
+    height: 800px;
+    width: 700px;
+    min-width: 280px;
+    max-width: 300px;
+  }
   .speaker-bg {
     background-image: url($speaker-bg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     z-index: -1;
+
+    @media only screen and (min-width: $desktop-size) {
+      height: 100px;
+      width: 100px;
+    }
+
   }
   .speaker-image {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
+    height: 125px;
+    width: 125px;
+    @media only screen and (min-width: $desktop-size) {
+      top: 40px;
+      left: 40px;
+      height: 225px;
+      width: 225px;
+    }
   }
+}
 
+.line {
+  height: 1px;
+  width: 20px;
+  background-color: orangered;
 }

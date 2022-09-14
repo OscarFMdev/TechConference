@@ -1,7 +1,9 @@
 
 @use './base/globals';
+@use './base/icons';
 
 
+@use './layout/top-section';
 @use './layout/nav-bar';
 @use './layout/header';
 @use './layout/program';

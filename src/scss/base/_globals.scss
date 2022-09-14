@@ -5,6 +5,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -12,4 +16,17 @@ html {
 * {
   box-sizing: border-box;
   font-family: $primary-font;
+}
+
+.desktop {
+  visibility: hidden;
+  @media screen and (min-width: $desktop-size) {
+    visibility: visible;
+  }
+}
+.mobile {
+  visibility: visible;
+  @media screen and (min-width: $desktop-size) {
+    visibility: hidden;
+  }
 }
