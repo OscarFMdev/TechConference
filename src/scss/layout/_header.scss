@@ -1,5 +1,22 @@
 @import '../base/variables';
 
+#header {
+  background-image: url($mobile-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: $desktop-size) {
+    background-image: url($desktop-bg);
+    height: 97vh;
+    justify-content: center;
+  }
+}
+
 blockquote {
   color: orangered;
   margin-bottom: 5px;
@@ -24,7 +41,9 @@ blockquote {
   text-align: center;
   margin-top: 0;
   width: 300px;
-
+  @media only screen and (min-width: $desktop-size) {
+    margin-bottom: 0;
+  }
   div {
     display: flex;
     flex-direction: column;
@@ -46,23 +65,6 @@ blockquote {
   @media only screen and (min-width: $desktop-size) {
     font-size: 80px;
     width: 600px;
-  }
-}
-
-#header {
-  background-image: url($mobile-bg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  @media only screen and (min-width: $desktop-size) {
-    background-image: url($desktop-bg);
-    height: 97vh;
-    justify-content: center;
   }
 }
 
@@ -100,6 +102,7 @@ blockquote {
   min-width: 500px;
   @media only screen and (min-width: $desktop-size) {
     font-size: 50px;
+    margin: 0;
   }
   .date {
     font-weight: bolder;

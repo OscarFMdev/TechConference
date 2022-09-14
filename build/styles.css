@@ -1,10 +1,11 @@
 html {
-  min-height: 100vh;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 body {
   margin: 0;
+  height: fit-content;
 }
 
 *, *:before, *:after {
@@ -100,6 +101,24 @@ body {
   justify-content: flex-end;
 }
 
+#header {
+  background-image: url("../src/img/backgrounds/mobile-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  #header {
+    background-image: url("../src/img/backgrounds/desktop-bg.png");
+    height: 97vh;
+    justify-content: center;
+  }
+}
+
 blockquote {
   color: orangered;
   margin-bottom: 5px;
@@ -127,6 +146,11 @@ blockquote {
   margin-top: 0;
   width: 300px;
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 0;
+  }
+}
 .header div {
   display: flex;
   flex-direction: column;
@@ -149,24 +173,6 @@ blockquote {
   .header {
     font-size: 80px;
     width: 600px;
-  }
-}
-
-#header {
-  background-image: url("../src/img/backgrounds/mobile-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-@media only screen and (min-width: 768px) {
-  #header {
-    background-image: url("../src/img/backgrounds/desktop-bg.png");
-    height: 97vh;
-    justify-content: center;
   }
 }
 
@@ -208,6 +214,7 @@ blockquote {
 @media only screen and (min-width: 768px) {
   .place {
     font-size: 50px;
+    margin: 0;
   }
 }
 .place .date {
@@ -328,7 +335,7 @@ blockquote {
 }
 @media only screen and (min-width: 768px) {
   .speaker-card .upper-part {
-    height: 270px;
+    height: auto;
     justify-content: space-around;
     position: relative;
     display: flex;
@@ -379,7 +386,7 @@ blockquote {
 }
 @media only screen and (min-width: 768px) {
   .speaker-image-container {
-    height: 800px;
+    height: 350px;
     width: 700px;
     min-width: 280px;
     max-width: 300px;
@@ -421,9 +428,22 @@ blockquote {
   background-color: orangered;
 }
 
+.last-section {
+  height: 100px;
+}
+
 footer {
+  margin-top: 100px;
   height: 100px;
   background-color: #272a31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer h6 {
+  color: white;
+  font-size: 20px;
 }
 
 .white-box {
@@ -436,6 +456,11 @@ footer {
   align-items: center;
   border: 1px solid gray;
   margin: 16px 5px;
+}
+@media only screen and (min-width: 768px) {
+  .white-box {
+    margin: 85px;
+  }
 }
 .white-box p {
   text-align: center;
@@ -528,7 +553,7 @@ footer {
   width: 90vw;
   height: auto;
   min-width: 342px;
-  max-width: 419px;
+  max-width: 352px;
 }
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container .bg img {

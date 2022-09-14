@@ -1,12 +1,13 @@
 @import './variables';
 
 html {  
-  min-height: 100vh;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 body {
   margin: 0;
+  height: fit-content;
 }
 
 *, *:before, *:after {
