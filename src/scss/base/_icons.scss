@@ -1,4 +1,13 @@
 
+.fa-xmark {
+  filter: invert(100%);
+  transform: scale(2);
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
 .top-icon {
   height: 20px;
   width: auto;

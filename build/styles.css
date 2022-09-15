@@ -35,6 +35,15 @@ body {
   }
 }
 
+.fa-xmark {
+  filter: invert(100%);
+  transform: scale(2);
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
 .top-icon {
   height: 20px;
   width: auto;
@@ -63,9 +72,34 @@ body {
   margin-right: 50px;
 }
 
+.mobile-menu {
+  visibility: hidden;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+  margin-top: 50px;
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 5;
+  padding-left: 30px;
+  background-color: #272a31;
+  opacity: 0.9;
+}
+
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 2.8fr;
+  grid-template-columns: 1fr 1.8fr;
   justify-content: space-around;
   align-items: center;
 }
@@ -91,10 +125,20 @@ body {
     color: black;
   }
 }
+.nav-container .hamburger {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  justify-self: flex-start;
+  margin-left: 10px;
+}
 @media only screen and (min-width: 768px) {
   .nav-container .hamburger {
     display: none;
   }
+}
+.nav-container .logo {
+  justify-self: auto;
 }
 .nav-container .right-side {
   display: flex;
@@ -141,6 +185,7 @@ blockquote {
   background: #ff4500;
   background: linear-gradient(to right, hsl(21deg, 100%, 50%) 69%, hsla(236deg, 84%, 44%, 0.77) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 0;
@@ -161,6 +206,7 @@ blockquote {
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   font-size: 35px;
   font-weight: bolder;
 }

@@ -2,7 +2,7 @@
 
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 2.8fr;
+  grid-template-columns: 1fr 1.8fr;
   justify-content: space-around;
   align-items: center;
   @media only screen and (min-width: $desktop-size) {
@@ -26,9 +26,18 @@
     }
   }
   .hamburger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    justify-self: flex-start;
+    margin-left: 10px;
     @media only screen and (min-width: $desktop-size) {
       display: none;
     }
+  }
+  
+  .logo {
+    justify-self: auto;
   }
 
   .right-side {
