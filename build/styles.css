@@ -274,7 +274,7 @@ blockquote {
 #program {
   background-size: cover;
   background-color: #282b32;
-  height: 120vh;
+  height: 800px;
 }
 @media only screen and (min-width: 768px) {
   #program {
@@ -283,7 +283,7 @@ blockquote {
 }
 #program .cross-bg {
   background-image: url("../src/img/backgrounds/pattern_bg.png");
-  height: 120vh;
+  height: 800px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -311,7 +311,7 @@ blockquote {
   row-gap: 10px;
   align-items: center;
   justify-content: center;
-  grid-template-columns: minmax(300px, 100%);
+  grid-template-columns: minmax(370px, 500px);
 }
 @media only screen and (min-width: 768px) {
   .programs-container {
@@ -376,6 +376,7 @@ blockquote {
   width: 70%;
   margin: 5% 5%;
   align-self: center;
+  min-width: 230px;
 }
 @media only screen and (min-width: 768px) {
   .speaker-card {

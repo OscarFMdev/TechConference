@@ -18,7 +18,7 @@
   width: 70%;
   margin: 5% 5%;
   align-self: center;
-
+  min-width: 230px;
   @media only screen and (min-width: $desktop-size) {
     flex-direction: row;
     justify-content: space-around;

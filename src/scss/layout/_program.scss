@@ -3,14 +3,14 @@
 #program {
   background-size: cover;
   background-color: $program-bg;
-  height: 120vh;
+  height: 800px;
   @media only screen and (min-width: $desktop-size) {
     height: 42vh;
   }
   
   .cross-bg {
     background-image: url($bg-pattern);
-    height: 120vh;
+    height: 800px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
   row-gap: 10px;
   align-items: center;
   justify-content: center;
-  grid-template-columns: minmax(300px, 100%);
+  grid-template-columns: minmax(370px, 500px);
   @media only screen and (min-width: $desktop-size) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;

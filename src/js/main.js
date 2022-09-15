@@ -67,7 +67,7 @@ const array = [
   },
   {
     id: '4',
-    image: './src/img/speakers/ariel-camus-microverse.jpeg',
+    image: './src/img/speakers/leadership-nat-friedman-github.jpg',
     name: 'Mat Friedman',
     company: 'GitHub CEO',
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas accusamus eaque officia obcaecati nam, iure reprehenderit molestiae provident commodi, voluptatum enim atque optio debitis qui numquam magnam quidem voluptatibus repudiandae.',
@@ -88,7 +88,33 @@ const array = [
   },
 ]
 
+const speakerSection = document.querySelector('.speakers');
 
 for(let speaker in array) {
-  console.log(array[speaker].name);
+  speakerSection.innerHTML += `
+  <!-- speaker card -->
+          <div class="speaker-card">
+            <div class="upper-part">
+              <div class="speaker-image-container">
+                <div class="speaker-bg"></div>
+                <img class="speaker-image" src="${array[speaker].image}" alt="${array[speaker].name} image">
+              </div>
+              <div class="speakers-headings">
+                <h4 class="speaker-name">${array[speaker].name}</h4>
+                <h5 class="speaker-company"> ${array[speaker].company}</h5>
+                <div class="line desktop"></div>
+                <p class="speaker-introduction-desktop">
+                ${array[speaker].description}
+                </p>
+              </div>
+            </div>
+            <div class="lower-part">
+              <p class="speaker-introduction-mobile">
+              ${array[speaker].description}
+              </p>
+            </div>
+          </div>
+          <!-- speaker card -->
+  `
+  
 }
