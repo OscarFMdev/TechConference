@@ -311,7 +311,7 @@ blockquote {
   row-gap: 10px;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  grid-template-columns: minmax(300px, 100%);
 }
 @media only screen and (min-width: 768px) {
   .programs-container {
@@ -340,7 +340,7 @@ blockquote {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 80%;
+    height: 100%;
   }
   .programs-container .program-card .program-card:nth-child(4) p {
     margin-bottom: 0;
@@ -362,6 +362,13 @@ blockquote {
   align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(450px, 1fr));
+  }
+}
+
 .speaker-card {
   display: flex;
   flex-direction: column;
@@ -374,10 +381,14 @@ blockquote {
   .speaker-card {
     flex-direction: row;
     justify-content: space-around;
+    width: 500px;
+    min-width: 350px;
+    margin: 30px 0;
   }
 }
 .speaker-card .upper-part {
   display: flex;
+  min-width: 255px;
 }
 @media only screen and (min-width: 768px) {
   .speaker-card .upper-part {
@@ -386,6 +397,7 @@ blockquote {
     position: relative;
     display: flex;
     justify-content: center;
+    max-width: 600px;
   }
 }
 .speaker-card .lower-part {
@@ -394,6 +406,8 @@ blockquote {
 .speaker-card .lower-part .speaker-introduction-mobile {
   margin-top: 0;
   display: block;
+  min-width: 250px;
+  margin-left: 20px;
 }
 @media only screen and (min-width: 768px) {
   .speaker-card .lower-part .speaker-introduction-mobile {
@@ -432,7 +446,8 @@ blockquote {
 }
 @media only screen and (min-width: 768px) {
   .speaker-image-container {
-    height: 350px;
+    max-height: 350px;
+    min-height: 250px;
     width: 700px;
     min-width: 280px;
     max-width: 300px;
