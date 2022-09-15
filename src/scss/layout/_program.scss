@@ -3,22 +3,51 @@
 #program {
   background-size: cover;
   background-color: $program-bg;
-  height: 800px;
+  height: 900px;
 
   @media only screen and (min-width: $desktop-size) {
-    height: 42vh;
+    height: 50vh;
   }
 
   .cross-bg {
     background-image: url($bg-pattern);
-    height: 800px;
+    height: 900px;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    .line {
+      margin-top: 15px;
+    }
     @media only screen and (min-width: $desktop-size) {
-      height: 42vh;
+      height: 50vh;
+      .line {
+        margin-top: 15px;
+      }
+    }
+    .program-button {
+      background-color: orangered;
+      text-decoration: none;
+      border: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+    .program-link {
+      color: white;
+      text-decoration: none;
+      min-width: 133.35px;
+      max-height: 16px;
+      display: block;
+      @media only screen and (min-width: $desktop-size) {
+        padding: 35px 0;
+        text-decoration: underline;
+      }
+    }
+    .program-link:visited {
+      @media only screen and (min-width: $desktop-size) {
+        color: white;
+        padding: 35px 0;
+      }
     }
   }
 
@@ -28,10 +57,6 @@
     font-weight: 400;
     position: relative;
     top: 30px;
-  }
-
-  .line {
-    margin-top: 15px;
   }
 }
 

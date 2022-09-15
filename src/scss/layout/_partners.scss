@@ -1,0 +1,27 @@
+@import '../base/variables';
+#partners {
+  background-color: $black;
+  height: 300px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .partners-heading {
+    color: white;
+    margin-bottom: 15px;
+  }
+  div {
+    margin-bottom: 50px;
+  }
+  .partners-logos {
+    display: flex;
+    column-gap: 30px;
+    .google-logo {
+      
+    }
+    img {
+      filter: grayscale(100%);
+    }
+  }
+}

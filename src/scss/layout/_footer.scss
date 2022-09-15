@@ -5,16 +5,16 @@
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 0;
   height: 100px;
-  background-color: $black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 
   h6 {
-    color: white;
+    color: black;
     font-size: 20px;
   }
 }

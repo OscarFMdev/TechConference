@@ -20,7 +20,6 @@ body {
 .desktop {
   visibility: hidden;
 }
-
 @media screen and (min-width: 768px) {
   .desktop {
     visibility: visible;
@@ -30,11 +29,16 @@ body {
 .mobile {
   visibility: visible;
 }
-
 @media screen and (min-width: 768px) {
   .mobile {
     visibility: hidden;
   }
+}
+
+.line {
+  height: 1px;
+  width: 20px;
+  background-color: orangered;
 }
 
 .fa-xmark {
@@ -60,7 +64,6 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
 .top-section ul {
   list-style: none;
   display: flex;
@@ -68,11 +71,9 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .top-section ul li {
   color: white;
 }
-
 .top-section ul li:nth-child(3) {
   margin-right: 50px;
 }
@@ -80,7 +81,6 @@ body {
 .mobile-menu {
   visibility: hidden;
 }
-
 .mobile-menu a {
   text-decoration: none;
   color: orangered;
@@ -109,7 +109,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-container {
     grid-template-columns: 1fr 1fr;
@@ -117,11 +116,9 @@ body {
     margin: 10px 15% 0 7%;
   }
 }
-
 .nav-container ul {
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-container ul {
     display: flex;
@@ -129,13 +126,11 @@ body {
     column-gap: 30px;
     padding-left: 0;
   }
-
   .nav-container ul li a {
     text-decoration: none;
     color: black;
   }
 }
-
 .nav-container .hamburger {
   cursor: pointer;
   position: relative;
@@ -143,17 +138,14 @@ body {
   justify-self: flex-start;
   margin-left: 10px;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-container .hamburger {
     display: none;
   }
 }
-
 .nav-container .logo {
   justify-self: auto;
 }
-
 .nav-container .right-side {
   display: flex;
   justify-content: flex-end;
@@ -169,7 +161,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 @media only screen and (min-width: 768px) {
   #header {
     background-image: url("../src/img/backgrounds/desktop-bg.png");
@@ -187,7 +178,6 @@ blockquote {
   margin-right: 5px;
   justify-self: baseline;
 }
-
 @media only screen and (min-width: 768px) {
   blockquote {
     margin-top: 0;
@@ -206,19 +196,16 @@ blockquote {
   margin-top: 0;
   width: 300px;
 }
-
 @media only screen and (min-width: 768px) {
   .header {
     margin-bottom: 0;
   }
 }
-
 .header div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .header span {
   background-image: url("../src/img/backgrounds/code-bg.jpeg");
   background-size: cover;
@@ -227,13 +214,11 @@ blockquote {
   font-size: 35px;
   font-weight: bolder;
 }
-
 @media only screen and (min-width: 768px) {
   .header span {
     font-size: 80px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .header {
     font-size: 80px;
@@ -253,11 +238,9 @@ blockquote {
   border: 5px solid white;
   min-width: 200px;
 }
-
 .introduction p {
   width: 90%;
 }
-
 @media only screen and (min-width: 768px) {
   .introduction {
     font-size: 20px;
@@ -277,19 +260,16 @@ blockquote {
   border: 5px solid white;
   min-width: 500px;
 }
-
 @media only screen and (min-width: 768px) {
   .place {
     font-size: 50px;
     margin: 0;
   }
 }
-
 .place .date {
   font-weight: bolder;
   margin-bottom: 7px;
 }
-
 .place .salon {
   margin: 0;
 }
@@ -297,40 +277,64 @@ blockquote {
 #program {
   background-size: cover;
   background-color: #282b32;
-  height: 800px;
+  height: 900px;
 }
-
 @media only screen and (min-width: 768px) {
   #program {
-    height: 42vh;
+    height: 50vh;
   }
 }
-
 #program .cross-bg {
   background-image: url("../src/img/backgrounds/pattern_bg.png");
-  height: 800px;
+  height: 900px;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+#program .cross-bg .line {
+  margin-top: 15px;
+}
 @media only screen and (min-width: 768px) {
   #program .cross-bg {
-    height: 42vh;
+    height: 50vh;
+  }
+  #program .cross-bg .line {
+    margin-top: 15px;
   }
 }
-
+#program .cross-bg .program-button {
+  background-color: orangered;
+  text-decoration: none;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+#program .cross-bg .program-link {
+  color: white;
+  text-decoration: none;
+  min-width: 133.35px;
+  max-height: 16px;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #program .cross-bg .program-link {
+    padding: 35px 0;
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #program .cross-bg .program-link:visited {
+    color: white;
+    padding: 35px 0;
+  }
+}
 #program .program-heading {
   color: white;
   text-align: center;
   font-weight: 400;
   position: relative;
   top: 30px;
-}
-
-#program .line {
-  margin-top: 15px;
 }
 
 .programs-container {
@@ -341,7 +345,6 @@ blockquote {
   justify-content: center;
   grid-template-columns: minmax(370px, 500px);
 }
-
 @media only screen and (min-width: 768px) {
   .programs-container {
     grid-template-columns: repeat(5, 1fr);
@@ -350,11 +353,9 @@ blockquote {
     max-width: 1000px;
   }
 }
-
 .programs-container img {
   justify-self: center;
 }
-
 .programs-container .program-card {
   display: grid;
   justify-self: center;
@@ -365,7 +366,6 @@ blockquote {
   background-color: rgba(128, 128, 128, 0.4);
   height: 90%;
 }
-
 @media only screen and (min-width: 768px) {
   .programs-container .program-card {
     display: flex;
@@ -374,19 +374,16 @@ blockquote {
     text-align: center;
     height: 100%;
   }
-
   .programs-container .program-card .program-card:nth-child(4) p {
     margin-bottom: 0;
   }
 }
-
 .programs-container .program-card .program-card-heading {
   margin: 0;
   align-self: center;
   color: orangered !important;
   font-weight: 700 !important;
 }
-
 .programs-container .program-card .program-desc {
   color: white;
 }
@@ -395,12 +392,17 @@ blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
   .speakers {
     display: grid;
-    grid-template-columns: repeat(2, minmax(450px, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(650px, 1fr));
+    column-gap: 20px;
+    max-width: 67%;
   }
 }
 
@@ -413,7 +415,6 @@ blockquote {
   align-self: center;
   min-width: 230px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card {
     flex-direction: row;
@@ -423,62 +424,54 @@ blockquote {
     margin: 30px 0;
   }
 }
-
 .speaker-card .upper-part {
   display: flex;
   min-width: 255px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card .upper-part {
     height: auto;
     position: relative;
     display: flex;
     justify-content: center;
-    max-width: 600px;
+    min-width: 700px;
+    max-width: 900px;
   }
 }
-
 .speaker-card .lower-part {
   margin-top: 0;
 }
-
 .speaker-card .lower-part .speaker-introduction-mobile {
   margin-top: 0;
   display: block;
   min-width: 250px;
   margin-left: 20px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card .lower-part .speaker-introduction-mobile {
     display: none;
   }
 }
-
 .speaker-card .speakers-headings {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
 .speaker-card .speakers-headings .speaker-introduction-desktop {
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card .speakers-headings .speaker-introduction-desktop {
     display: block;
-    max-width: 715px;
+    min-width: 215px;
+    width: 300px;
   }
 }
-
 .speaker-card .speakers-headings .speaker-name {
   font-weight: 400;
   margin-bottom: 5px;
   width: 80px;
 }
-
 .speaker-card .speakers-headings .speaker-company {
   font-weight: 400;
   margin-top: 0;
@@ -490,17 +483,15 @@ blockquote {
   height: 150px;
   position: relative;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-image-container {
     max-height: 350px;
-    min-height: 250px;
+    min-height: 265px;
     width: 700px;
     min-width: 280px;
     max-width: 300px;
   }
 }
-
 .speaker-image-container .speaker-bg {
   background-image: url("../src/img/speakers/speaker-bg.jpg");
   background-size: cover;
@@ -509,14 +500,12 @@ blockquote {
   position: absolute;
   z-index: -1;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-image-container .speaker-bg {
     height: 100px;
     width: 100px;
   }
 }
-
 .speaker-image-container .speaker-image {
   position: absolute;
   top: 20px;
@@ -524,7 +513,6 @@ blockquote {
   height: 125px;
   width: 125px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-image-container .speaker-image {
     top: 40px;
@@ -534,22 +522,45 @@ blockquote {
   }
 }
 
+#partners {
+  background-color: #272a31;
+  height: 300px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#partners .partners-heading {
+  color: white;
+  margin-bottom: 15px;
+}
+#partners div {
+  margin-bottom: 50px;
+}
+#partners .partners-logos {
+  display: flex;
+  column-gap: 30px;
+}
+#partners .partners-logos img {
+  filter: grayscale(100%);
+}
+
 .last-section {
   height: 100px;
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 0;
   height: 100px;
-  background-color: #272a31;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-
 footer h6 {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -564,13 +575,11 @@ footer h6 {
   border: 1px solid gray;
   margin: 16px 5px;
 }
-
 @media only screen and (min-width: 768px) {
   .white-box {
     margin: 85px;
   }
 }
-
 .white-box p {
   text-align: center;
 }
@@ -580,11 +589,9 @@ footer h6 {
   flex-direction: column;
   align-items: center;
 }
-
 .contact-box .contact-about {
   text-align: center;
 }
-
 .contact-box .email {
   color: black;
   font-weight: bolder;
@@ -599,36 +606,30 @@ footer h6 {
   background-color: white;
   background-size: cover;
 }
-
 #about-body .program-heading {
   text-align: center;
   width: 200px;
 }
-
 #about-body .line {
   height: 1px;
   width: 20px;
   background-color: orangered;
 }
-
 #about-body .section-divider {
   height: 1px;
   width: 100%;
   background-color: gray;
   margin-top: 20px;
 }
-
 #about-body .past-conferences {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 #about-body .past-conferences p {
   text-align: center;
 }
-
 #about-body .past-conferences .conferences-container {
   display: flex;
   flex-direction: column;
@@ -638,11 +639,9 @@ footer h6 {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
 #about-body .past-conferences .conferences-container .container {
   position: relative;
 }
-
 #about-body .past-conferences .conferences-container .container .text-container .img-text {
   position: absolute;
   top: 50%;
@@ -651,24 +650,20 @@ footer h6 {
   z-index: 2;
   color: white;
 }
-
 #about-body .past-conferences .conferences-container .container .text-container .img-header {
   font-size: 30px;
   top: 30%;
   font-weight: 700;
 }
-
 #about-body .past-conferences .conferences-container .container .text-container .img-place {
   font-size: 27px;
   min-width: 202.5px;
 }
-
 #about-body .past-conferences .conferences-container .bg {
   background-color: red;
   background-size: cover;
   object-fit: cover;
 }
-
 #about-body .past-conferences .conferences-container .bg img {
   overflow: hidden;
   mix-blend-mode: darken;
@@ -677,20 +672,19 @@ footer h6 {
   min-width: 342px;
   max-width: 352px;
 }
-
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container .bg img {
     width: 40vw;
   }
 }
-
 #about-body .past-conferences .conferences-container .bg:hover {
   filter: grayscale(100%);
 }
-
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container {
     flex-direction: row;
     max-width: 1100px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -4,12 +4,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .speakers {
   @media only screen and (min-width: $desktop-size) {
     display: grid;
-    grid-template-columns: repeat(2, minmax(450px, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(650px, 1fr));
+    column-gap: 20px;
+    max-width: 67%;
   }
 }
 
@@ -39,7 +44,8 @@
       position: relative;
       display: flex;
       justify-content: center;
-      max-width: 600px;
+      min-width: 700px;
+      max-width: 900px;
     }
   }
 
@@ -62,13 +68,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     .speaker-introduction-desktop {
       display: none;
 
       @media only screen and (min-width: $desktop-size) {
         display: block;
-        max-width: 715px;
+        min-width: 215px;
+        width: 300px;
       }
     }
 
@@ -93,7 +99,7 @@
 
   @media only screen and (min-width: $desktop-size) {
     max-height: 350px;
-    min-height: 250px;
+    min-height: 265px;
     width: 700px;
     min-width: 280px;
     max-width: 300px;
@@ -129,8 +135,3 @@
   }
 }
 
-.line {
-  height: 1px;
-  width: 20px;
-  background-color: orangered;
-}

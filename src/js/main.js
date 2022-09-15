@@ -95,7 +95,7 @@ for (let i = 0; i < array.length; i += 1) {
             <div class="upper-part">
               <div class="speaker-image-container">
                 <div class="speaker-bg"></div>
-                <img class="speaker-image" src="${array[i].image}" alt="${array[i].name} image">
+                <img class="speaker-image" src="${array[i].image}" alt="${array[i].name} image" height="225" width="225">
               </div>
               <div class="speakers-headings">
                 <h4 class="speaker-name">${array[i].name}</h4>
