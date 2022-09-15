@@ -1,16 +1,10 @@
-
-@use './base/globals';
-@use './base/icons';
-
-
-@use './layout/top-section';
-@use './layout/mobile-menu';
-@use './layout/nav-bar';
-@use './layout/header';
-@use './layout/program';
-@use './layout/speakers';
-@use './layout/footer';
-
-
-@use './pages/about';
-
+@import './base/globals';
+@import './base/icons';
+@import './layout/top-section';
+@import './layout/mobile-menu';
+@import './layout/nav-bar';
+@import './layout/header';
+@import './layout/program';
+@import './layout/speakers';
+@import './layout/footer';
+@import './pages/about';

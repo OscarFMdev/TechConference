@@ -25,6 +25,7 @@ blockquote {
   margin-left: 9px;
   margin-right: 5px;
   justify-self: baseline;
+
   @media only screen and (min-width: $desktop-size) {
     margin-top: 0;
     padding-top: 0;
@@ -37,28 +38,29 @@ blockquote {
   background: #ff4500;
   background: linear-gradient(to right, hsl(21, 100%, 50%, 1) 69%, hsl(236, 84%, 44%, 0.77) 100%);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 0;
   width: 300px;
+
   @media only screen and (min-width: $desktop-size) {
     margin-bottom: 0;
   }
+
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
+
   span {
     background-image: url($header-bg);
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
     font-size: 35px;
     font-weight: bolder;
+
     @media only screen and (min-width: $desktop-size) {
       font-size: 80px;
     }
@@ -81,9 +83,11 @@ blockquote {
   align-items: center;
   border: 5px solid white;
   min-width: 200px;
+
   p {
     width: 90%;
   }
+
   @media only screen and (min-width: $desktop-size) {
     font-size: 20px;
   }
@@ -97,15 +101,16 @@ blockquote {
   filter: brightness(115%);
   padding: 0 10px 15px 0;
   text-align: center;
-  align-content: space-around;
   justify-content: center;
   align-content: center;
   border: 5px solid white;
   min-width: 500px;
+
   @media only screen and (min-width: $desktop-size) {
     font-size: 50px;
     margin: 0;
   }
+
   .date {
     font-weight: bolder;
     margin-bottom: 7px;

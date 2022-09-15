@@ -1,16 +1,16 @@
 @import './variables';
 
-html {  
+html {
   box-sizing: border-box;
-  height: fit-content;
 }
 
 body {
   margin: 0;
-  height: fit-content;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -21,12 +21,15 @@ body {
 
 .desktop {
   visibility: hidden;
+
   @media screen and (min-width: $desktop-size) {
     visibility: visible;
   }
 }
+
 .mobile {
   visibility: visible;
+
   @media screen and (min-width: $desktop-size) {
     visibility: hidden;
   }

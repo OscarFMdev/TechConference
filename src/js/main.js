@@ -1,25 +1,10 @@
 /* Mobile Menu */
 
 const hamburger = document.querySelector('.hamburger');
-const mobileMenu =  document.querySelector('.mobile-menu');
-const cross =  document.querySelector('.fa-xmark');
+const mobileMenu = document.querySelector('.mobile-menu');
+const cross = document.querySelector('.fa-xmark');
 const menuOptions = document.querySelectorAll('.desktop-menu li');
 let menuActivated = false;
-
-hamburger.addEventListener('click', () => {
-  open();
-  if (menuActivated == false) {
-    mobileMenu.innerHTML += '<a href="./index.html">Home</a>'
-    for(let option = 0; option < menuOptions.length; option += 1) {
-      mobileMenu.innerHTML += menuOptions[option].innerHTML;
-    }
-  }
-  menuActivated = true;
-});
-
-cross.addEventListener('click', close);
-mobileMenu.addEventListener('click', close);
-
 
 function open() {
   mobileMenu.classList.toggle('open');
@@ -40,6 +25,19 @@ function close() {
   cross.style.display = 'none';
   cross.style.height = '0';
 }
+hamburger.addEventListener('click', () => {
+  open();
+  if (menuActivated === false) {
+    mobileMenu.innerHTML += '<a href="./index.html">Home</a>';
+    for (let option = 0; option < menuOptions.length; option += 1) {
+      mobileMenu.innerHTML += menuOptions[option].innerHTML;
+    }
+  }
+  menuActivated = true;
+});
+
+cross.addEventListener('click', close);
+mobileMenu.addEventListener('click', close);
 
 /* Create speaker cards */
 
@@ -86,35 +84,34 @@ const array = [
     company: 'Google CEO',
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas accusamus eaque officia obcaecati nam, iure reprehenderit molestiae provident commodi, voluptatum enim atque optio debitis qui numquam magnam quidem voluptatibus repudiandae.',
   },
-]
+];
 
 const speakerSection = document.querySelector('.speakers');
 
-for(let speaker in array) {
+for (let i = 0; i < array.length; i += 1) {
   speakerSection.innerHTML += `
   <!-- speaker card -->
           <div class="speaker-card">
             <div class="upper-part">
               <div class="speaker-image-container">
                 <div class="speaker-bg"></div>
-                <img class="speaker-image" src="${array[speaker].image}" alt="${array[speaker].name} image">
+                <img class="speaker-image" src="${array[i].image}" alt="${array[i].name} image">
               </div>
               <div class="speakers-headings">
-                <h4 class="speaker-name">${array[speaker].name}</h4>
-                <h5 class="speaker-company"> ${array[speaker].company}</h5>
+                <h4 class="speaker-name">${array[i].name}</h4>
+                <h5 class="speaker-company"> ${array[i].company}</h5>
                 <div class="line desktop"></div>
                 <p class="speaker-introduction-desktop">
-                ${array[speaker].description}
+                ${array[i].description}
                 </p>
               </div>
             </div>
             <div class="lower-part">
               <p class="speaker-introduction-mobile">
-              ${array[speaker].description}
+              ${array[i].description}
               </p>
             </div>
           </div>
           <!-- speaker card -->
-  `
-  
+  `;
 }
