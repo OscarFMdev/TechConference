@@ -16,9 +16,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .line {
       margin-top: 15px;
     }
+
     @media only screen and (min-width: $desktop-size) {
       height: 50vh;
       .line {
@@ -31,6 +33,9 @@
       border: none;
       margin-top: 20px;
       padding: 10px 20px;
+      @media only screen and (min-width: $desktop-size) {
+        background-color: transparent;
+      }
     }
     .program-link {
       color: white;
@@ -39,8 +44,9 @@
       max-height: 16px;
       display: block;
       @media only screen and (min-width: $desktop-size) {
-        padding: 35px 0;
+        padding-top: 55px;
         text-decoration: underline;
+        font-size: 20px;
       }
     }
     .program-link:visited {
