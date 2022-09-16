@@ -3,6 +3,7 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const cross = document.querySelector('.fa-xmark');
+const crossBefore = document.querySelector('.fa-xmark:before');
 const menuOptions = document.querySelectorAll('.desktop-menu li');
 let menuActivated = false;
 
@@ -24,6 +25,9 @@ function close() {
   cross.style.visibility = 'hidden';
   cross.style.display = 'none';
   cross.style.height = '0';
+  crossBefore.style.visibility = 'hidden';
+  crossBefore.style.display = 'none';
+  crossBefore.style.height = '0';
 }
 hamburger.addEventListener('click', () => {
   open();

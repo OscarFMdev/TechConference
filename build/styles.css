@@ -32,7 +32,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .mobile {
-    visibility: hidden;
+    visibility: hidden !important;
   }
 }
 
@@ -153,6 +153,10 @@ body {
 .nav-container .right-side {
   display: flex;
   justify-content: flex-end;
+}
+
+.past-conferences {
+  min-width: 120px;
 }
 
 #header {

@@ -33,7 +33,7 @@ body {
   visibility: visible;
 
   @media screen and (min-width: $desktop-size) {
-    visibility: hidden;
+    visibility: hidden !important;
   }
 }
 
