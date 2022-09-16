@@ -14,10 +14,6 @@
   @media only screen and (min-width: $desktop-size) {
     margin: 85px;
   }
-
-  p {
-    text-align: center;
-  }
 }
 
 .scale-2 {
@@ -56,12 +52,6 @@
   .program-heading {
     text-align: center;
     width: 200px;
-  }
-
-  .line {
-    height: 1px;
-    width: 20px;
-    background-color: $orange;
   }
 
   .section-divider {
