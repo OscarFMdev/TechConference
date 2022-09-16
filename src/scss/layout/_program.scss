@@ -3,7 +3,6 @@
 #program {
   background-size: cover;
   background-color: $program-bg;
-  padding-bottom: 50px;
 
   @media only screen and (min-width: $desktop-size) {
     height: 50vh;
@@ -30,7 +29,7 @@
     }
 
     .program-button {
-      background-color: orangered;
+      background-color: $orange;
       text-decoration: none;
       border: none;
       margin-top: 20px;
@@ -118,7 +117,7 @@
     .program-card-heading {
       margin: 0;
       align-self: center;
-      color: orangered !important;
+      color: $orange !important;
       font-weight: 700 !important;
     }
 

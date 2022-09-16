@@ -21,7 +21,6 @@ body {
 .desktop {
   visibility: hidden;
 }
-
 @media screen and (min-width: 768px) {
   .desktop {
     visibility: visible;
@@ -31,7 +30,6 @@ body {
 .mobile {
   visibility: visible;
 }
-
 @media screen and (min-width: 768px) {
   .mobile {
     visibility: hidden !important;
@@ -41,7 +39,7 @@ body {
 .line {
   height: 1px;
   width: 20px;
-  background-color: orangered;
+  background-color: #ec5242;
 }
 
 .fa-xmark {
@@ -67,7 +65,6 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
 .top-section ul {
   list-style: none;
   display: flex;
@@ -75,11 +72,9 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .top-section ul li {
   color: white;
 }
-
 .top-section ul li:nth-child(3) {
   margin-right: 50px;
 }
@@ -87,10 +82,9 @@ body {
 .mobile-menu {
   visibility: hidden;
 }
-
 .mobile-menu a {
   text-decoration: none;
-  color: orangered;
+  color: #ec5242;
   font-weight: 700;
   font-size: 30px;
   display: block;
@@ -116,7 +110,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-container {
     grid-template-columns: 1fr 1fr;
@@ -124,11 +117,9 @@ body {
     margin: 10px 15% 0 7%;
   }
 }
-
 .nav-container ul {
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-container ul {
     display: flex;
@@ -136,17 +127,14 @@ body {
     column-gap: 30px;
     padding-left: 0;
   }
-
   .nav-container ul li a {
     text-decoration: none;
     color: black;
   }
-
   .nav-container ul li a:hover {
-    color: orangered;
+    color: #ec5242;
   }
 }
-
 .nav-container .hamburger {
   cursor: pointer;
   position: relative;
@@ -154,17 +142,14 @@ body {
   justify-self: flex-start;
   margin-left: 10px;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-container .hamburger {
     display: none;
   }
 }
-
 .nav-container .logo {
   justify-self: auto;
 }
-
 .nav-container .right-side {
   display: flex;
   justify-content: flex-end;
@@ -184,7 +169,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 @media only screen and (min-width: 768px) {
   #header {
     background-image: url("../src/img/backgrounds/desktop-bg.png");
@@ -194,7 +178,7 @@ body {
 }
 
 blockquote {
-  color: orangered;
+  color: #ec5242;
   margin-bottom: 5px;
   padding-top: 20px;
   text-align: center;
@@ -202,7 +186,6 @@ blockquote {
   margin-right: 5px;
   justify-self: baseline;
 }
-
 @media only screen and (min-width: 768px) {
   blockquote {
     margin-top: 0;
@@ -220,19 +203,16 @@ blockquote {
   text-align: center;
   margin-top: 0;
 }
-
 @media only screen and (min-width: 768px) {
   .header {
     margin-bottom: 0;
   }
 }
-
 .header div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .header span {
   background-image: url("../src/img/backgrounds/code-bg.jpeg");
   background-size: cover;
@@ -241,13 +221,11 @@ blockquote {
   font-size: 1em;
   font-weight: bolder;
 }
-
 @media only screen and (min-width: 768px) {
   .header span {
     font-size: 80px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .header {
     font-size: 80px;
@@ -267,11 +245,9 @@ blockquote {
   border: 5px solid white;
   min-width: 200px;
 }
-
 .introduction p {
   width: 90%;
 }
-
 @media only screen and (min-width: 768px) {
   .introduction {
     font-size: 20px;
@@ -291,19 +267,16 @@ blockquote {
   border: 5px solid white;
   min-width: 500px;
 }
-
 @media only screen and (min-width: 768px) {
   .place {
     font-size: 50px;
     margin: 0;
   }
 }
-
 .place .date {
   font-weight: bolder;
   margin-bottom: 7px;
 }
-
 .place .salon {
   margin: 0;
 }
@@ -311,15 +284,12 @@ blockquote {
 #program {
   background-size: cover;
   background-color: #282b32;
-  padding-bottom: 50px;
 }
-
 @media only screen and (min-width: 768px) {
   #program {
     height: 50vh;
   }
 }
-
 #program .cross-bg {
   background-image: url("../src/img/backgrounds/pattern_bg.png");
   z-index: 2;
@@ -328,35 +298,29 @@ blockquote {
   align-items: center;
   padding-bottom: 50px;
 }
-
 #program .cross-bg .line {
   margin-top: 15px;
 }
-
 @media only screen and (min-width: 768px) {
   #program .cross-bg {
     height: 50vh;
   }
-
   #program .cross-bg .line {
     margin-top: 15px;
   }
 }
-
 #program .cross-bg .program-button {
-  background-color: orangered;
+  background-color: #ec5242;
   text-decoration: none;
   border: none;
   margin-top: 20px;
   padding: 10px 20px;
 }
-
 @media only screen and (min-width: 768px) {
   #program .cross-bg .program-button {
     background-color: transparent;
   }
 }
-
 #program .cross-bg .program-link {
   color: white;
   text-decoration: none;
@@ -364,7 +328,6 @@ blockquote {
   max-height: 16px;
   display: block;
 }
-
 @media only screen and (min-width: 768px) {
   #program .cross-bg .program-link {
     padding-top: 55px;
@@ -372,14 +335,12 @@ blockquote {
     font-size: 20px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   #program .cross-bg .program-link:visited {
     color: white;
     padding: 35px 0;
   }
 }
-
 #program .program-heading {
   color: white;
   text-align: center;
@@ -396,7 +357,6 @@ blockquote {
   justify-content: center;
   grid-template-columns: minmax(370px, 500px);
 }
-
 @media only screen and (min-width: 768px) {
   .programs-container {
     grid-template-columns: repeat(5, 1fr);
@@ -405,11 +365,9 @@ blockquote {
     max-width: 1000px;
   }
 }
-
 .programs-container img {
   justify-self: center;
 }
-
 .programs-container .program-card {
   display: grid;
   justify-self: center;
@@ -420,7 +378,6 @@ blockquote {
   background-color: rgba(128, 128, 128, 0.4);
   height: 90%;
 }
-
 @media only screen and (min-width: 768px) {
   .programs-container .program-card {
     display: flex;
@@ -429,19 +386,16 @@ blockquote {
     text-align: center;
     height: 100%;
   }
-
   .programs-container .program-card .program-card:nth-child(4) p {
     margin-bottom: 0;
   }
 }
-
 .programs-container .program-card .program-card-heading {
   margin: 0;
   align-self: center;
-  color: orangered !important;
+  color: #ec5242 !important;
   font-weight: 700 !important;
 }
-
 .programs-container .program-card .program-desc {
   color: white;
 }
@@ -473,7 +427,6 @@ blockquote {
   align-self: center;
   flex: 1;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card {
     flex-direction: row;
@@ -481,12 +434,10 @@ blockquote {
     margin: 30px 0;
   }
 }
-
 .speaker-card .upper-part {
   display: flex;
   min-width: 255px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card .upper-part {
     height: auto;
@@ -495,34 +446,28 @@ blockquote {
     justify-content: center;
   }
 }
-
 .speaker-card .lower-part {
   margin-top: 0;
 }
-
 .speaker-card .lower-part .speaker-introduction-mobile {
   margin-top: 0;
   display: block;
   min-width: 250px;
   margin-left: 20px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card .lower-part .speaker-introduction-mobile {
     display: none;
   }
 }
-
 .speaker-card .speakers-headings {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
 .speaker-card .speakers-headings .speaker-introduction-desktop {
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-card .speakers-headings .speaker-introduction-desktop {
     display: block;
@@ -530,17 +475,15 @@ blockquote {
     max-width: 555px;
   }
 }
-
 .speaker-card .speakers-headings .speaker-name {
   font-weight: 400;
   margin-bottom: 5px;
   width: 80px;
 }
-
 .speaker-card .speakers-headings .speaker-company {
   font-weight: 400;
   margin-top: 0;
-  color: orangered;
+  color: #ec5242;
 }
 
 .speaker-image-container {
@@ -548,7 +491,6 @@ blockquote {
   height: 150px;
   position: relative;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-image-container {
     max-height: 350px;
@@ -558,7 +500,6 @@ blockquote {
     max-width: 276px;
   }
 }
-
 .speaker-image-container .speaker-bg {
   background-image: url("../src/img/speakers/speaker-bg.jpg");
   background-size: cover;
@@ -567,14 +508,12 @@ blockquote {
   position: absolute;
   z-index: -1;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-image-container .speaker-bg {
     height: 100px;
     width: 100px;
   }
 }
-
 .speaker-image-container .speaker-image {
   position: absolute;
   top: 20px;
@@ -582,7 +521,6 @@ blockquote {
   height: 125px;
   width: 125px;
 }
-
 @media only screen and (min-width: 768px) {
   .speaker-image-container .speaker-image {
     top: 40px;
@@ -599,12 +537,10 @@ blockquote {
   flex-direction: column;
   align-items: center;
 }
-
 #partners .partners-heading {
   color: white;
   margin-bottom: 15px;
 }
-
 #partners .partners-logos {
   flex-wrap: wrap;
   display: flex;
@@ -612,7 +548,6 @@ blockquote {
   align-items: center;
   justify-content: center;
 }
-
 #partners .partners-logos img {
   transform: scale(0.75);
   filter: grayscale(100%);
@@ -621,7 +556,6 @@ blockquote {
 .about-partners {
   display: block;
 }
-
 @media only screen and (min-width: 768px) {
   .about-partners {
     display: none !important;
@@ -641,18 +575,15 @@ footer {
   align-items: center;
   column-gap: 10px;
 }
-
 footer h6 {
   color: black;
   font-size: 10px;
   margin: 0;
 }
-
 footer .footer-text {
   display: flex;
   flex-direction: column;
 }
-
 footer .footer-text p {
   margin: 0;
   font-size: 9px;
@@ -662,17 +593,14 @@ footer .footer-text p {
   background-color: white;
   color: black;
 }
-
 #black h6 {
   color: black;
 }
-
 @media only screen and (min-width: 768px) {
   #black {
     background-color: #272a31;
     color: white;
   }
-
   #black h6 {
     color: white;
   }
@@ -689,11 +617,13 @@ footer .footer-text p {
   border: 1px solid gray;
   margin: 16px 5px;
 }
-
 @media only screen and (min-width: 768px) {
   .white-box {
     margin: 85px;
   }
+}
+.white-box p {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -707,11 +637,9 @@ footer .footer-text p {
   flex-direction: column;
   align-items: center;
 }
-
 .contact-box .contact-about {
   text-align: center;
 }
-
 .contact-box .email {
   color: black;
   font-weight: bolder;
@@ -725,36 +653,35 @@ footer .footer-text p {
   background-color: white;
   background-size: cover;
 }
-
 @media only screen and (min-width: 768px) {
   #about-body {
     height: auto;
   }
 }
-
 #about-body .program-heading {
   text-align: center;
   width: 200px;
 }
-
+#about-body .line {
+  height: 1px;
+  width: 20px;
+  background-color: #ec5242;
+}
 #about-body .section-divider {
   height: 1px;
   width: 100%;
   background-color: gray;
   margin-top: 20px;
 }
-
 #about-body .past-conferences {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 #about-body .past-conferences p {
   text-align: center;
 }
-
 #about-body .past-conferences .conferences-container {
   display: flex;
   flex-direction: column;
@@ -764,11 +691,9 @@ footer .footer-text p {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
 #about-body .past-conferences .conferences-container .container {
   position: relative;
 }
-
 #about-body .past-conferences .conferences-container .container .text-container .img-text {
   position: absolute;
   top: 50%;
@@ -777,24 +702,20 @@ footer .footer-text p {
   z-index: 2;
   color: white;
 }
-
 #about-body .past-conferences .conferences-container .container .text-container .img-header {
   font-size: 30px;
   top: 30%;
   font-weight: 700;
 }
-
 #about-body .past-conferences .conferences-container .container .text-container .img-place {
   font-size: 27px;
   min-width: 202.5px;
 }
-
 #about-body .past-conferences .conferences-container .bg {
   background-color: red;
   background-size: cover;
   object-fit: cover;
 }
-
 #about-body .past-conferences .conferences-container .bg img {
   overflow: hidden;
   mix-blend-mode: darken;
@@ -803,20 +724,19 @@ footer .footer-text p {
   min-width: 342px;
   max-width: 352px;
 }
-
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container .bg img {
     width: 40vw;
   }
 }
-
 #about-body .past-conferences .conferences-container .bg:hover {
   filter: grayscale(100%);
 }
-
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container {
     flex-direction: row;
     max-width: 1100px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
