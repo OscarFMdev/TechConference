@@ -17,9 +17,7 @@
     flex: 1 1 50%;
     margin: 0 10%;
   }
-  .speaker-card {
-    flex: 1;
-  }
+
 }
 
 .speaker-card {
@@ -28,6 +26,7 @@
   justify-content: center;
   margin: 5% 5%;
   align-self: center;
+  flex: 1;
 
   @media only screen and (min-width: $desktop-size) {
     flex-direction: row;

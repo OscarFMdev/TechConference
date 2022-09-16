@@ -48,10 +48,11 @@
   align-items: center;
   background-color: white;
   background-size: cover;
- 
+
   @media only screen and (min-width: $desktop-size) {
     height: auto;
   }
+
   .program-heading {
     text-align: center;
     width: 200px;

@@ -191,14 +191,13 @@ blockquote {
 
 .header {
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-size: 3em;
   background: #ff4500;
   background: linear-gradient(to right, hsl(21deg, 100%, 50%) 39%, rgba(206, 18, 18, 0.77) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 0;
-  width: 300px;
 }
 @media only screen and (min-width: 768px) {
   .header {
@@ -215,7 +214,7 @@ blockquote {
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 35px;
+  font-size: 1em;
   font-weight: bolder;
 }
 @media only screen and (min-width: 768px) {
@@ -416,9 +415,6 @@ blockquote {
     margin: 0 10%;
   }
 }
-.speakers .speaker-card {
-  flex: 1;
-}
 
 .speaker-card {
   display: flex;
@@ -426,6 +422,7 @@ blockquote {
   justify-content: center;
   margin: 5% 5%;
   align-self: center;
+  flex: 1;
 }
 @media only screen and (min-width: 768px) {
   .speaker-card {

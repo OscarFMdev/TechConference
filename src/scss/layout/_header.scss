@@ -34,14 +34,13 @@ blockquote {
 
 .header {
   font-family: $header-font;
-  font-size: 28px;
+  font-size: 3em;
   background: #ff4500;
   background: linear-gradient(to right, hsl(21, 100%, 50%, 1) 39%, rgba(206, 18, 18, 0.77) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 0;
-  width: 300px;
 
   @media only screen and (min-width: $desktop-size) {
     margin-bottom: 0;
@@ -58,7 +57,7 @@ blockquote {
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 35px;
+    font-size: 1em;
     font-weight: bolder;
 
     @media only screen and (min-width: $desktop-size) {
