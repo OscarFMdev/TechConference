@@ -17,7 +17,6 @@
     flex: 1 1 50%;
     margin: 0 10%;
   }
-
 }
 
 .speaker-card {
@@ -65,6 +64,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
     .speaker-introduction-desktop {
       display: none;
 
@@ -131,4 +131,3 @@
     }
   }
 }
-

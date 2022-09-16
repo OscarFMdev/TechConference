@@ -4,6 +4,7 @@
   background-size: cover;
   background-color: $program-bg;
   padding-bottom: 50px;
+
   @media only screen and (min-width: $desktop-size) {
     height: 50vh;
   }
@@ -22,32 +23,38 @@
 
     @media only screen and (min-width: $desktop-size) {
       height: 50vh;
+
       .line {
         margin-top: 15px;
       }
     }
+
     .program-button {
       background-color: orangered;
       text-decoration: none;
       border: none;
       margin-top: 20px;
       padding: 10px 20px;
+
       @media only screen and (min-width: $desktop-size) {
         background-color: transparent;
       }
     }
+
     .program-link {
       color: white;
       text-decoration: none;
       min-width: 133.35px;
       max-height: 16px;
       display: block;
+
       @media only screen and (min-width: $desktop-size) {
         padding-top: 55px;
         text-decoration: underline;
         font-size: 20px;
       }
     }
+
     .program-link:visited {
       @media only screen and (min-width: $desktop-size) {
         color: white;

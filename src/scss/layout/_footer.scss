@@ -12,6 +12,7 @@ footer {
   justify-content: center;
   align-items: center;
   column-gap: 10px;
+
   h6 {
     color: black;
     font-size: 10px;
@@ -21,6 +22,7 @@ footer {
   .footer-text {
     display: flex;
     flex-direction: column;
+
     p {
       margin: 0;
       font-size: 9px;
@@ -31,12 +33,15 @@ footer {
 #black {
   background-color: white;
   color: black;
+
   h6 {
     color: black;
   }
+
   @media only screen and (min-width: $desktop-size) {
     background-color: $black;
     color: white;
+
     h6 {
       color: white;
     }
