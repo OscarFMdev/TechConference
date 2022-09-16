@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -130,6 +131,9 @@ body {
     text-decoration: none;
     color: black;
   }
+  .nav-container ul li a:hover {
+    color: orangered;
+  }
 }
 .nav-container .hamburger {
   cursor: pointer;
@@ -189,7 +193,7 @@ blockquote {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   background: #ff4500;
-  background: linear-gradient(to right, hsl(21deg, 100%, 50%) 69%, hsla(236deg, 84%, 44%, 0.77) 100%);
+  background: linear-gradient(to right, hsl(21deg, 100%, 50%) 39%, rgba(206, 18, 18, 0.77) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -277,7 +281,7 @@ blockquote {
 #program {
   background-size: cover;
   background-color: #282b32;
-  height: 900px;
+  padding-bottom: 50px;
 }
 @media only screen and (min-width: 768px) {
   #program {
@@ -286,11 +290,11 @@ blockquote {
 }
 #program .cross-bg {
   background-image: url("../src/img/backgrounds/pattern_bg.png");
-  height: 900px;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 #program .cross-bg .line {
   margin-top: 15px;
@@ -403,31 +407,30 @@ blockquote {
 
 @media only screen and (min-width: 768px) {
   .speakers {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(2, minmax(650px, 1fr));
     column-gap: 200px;
-    max-width: 67%;
-    margin-left: 7%;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    margin: 0 10%;
   }
+}
+.speakers .speaker-card {
+  flex: 1;
 }
 
 .speaker-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
   margin: 5% 5%;
   align-self: center;
-  min-width: 230px;
 }
 @media only screen and (min-width: 768px) {
   .speaker-card {
     flex-direction: row;
     justify-content: space-around;
-    width: 500px;
-    min-width: 350px;
     margin: 30px 0;
   }
 }
@@ -441,8 +444,6 @@ blockquote {
     position: relative;
     display: flex;
     justify-content: center;
-    min-width: 700px;
-    max-width: 900px;
   }
 }
 .speaker-card .lower-part {
@@ -470,6 +471,8 @@ blockquote {
 @media only screen and (min-width: 768px) {
   .speaker-card .speakers-headings .speaker-introduction-desktop {
     display: block;
+    min-width: 287px;
+    max-width: 555px;
   }
 }
 .speaker-card .speakers-headings .speaker-name {
@@ -529,9 +532,7 @@ blockquote {
 
 #partners {
   background-color: #272a31;
-  height: 50vh;
   width: 100%;
-  min-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -540,20 +541,25 @@ blockquote {
   color: white;
   margin-bottom: 15px;
 }
-#partners div {
-  margin-bottom: 50px;
-}
 #partners .partners-logos {
   flex-wrap: wrap;
   display: flex;
   column-gap: 30px;
   align-items: center;
   justify-content: center;
-  height: 200px;
 }
 #partners .partners-logos img {
   transform: scale(0.75);
   filter: grayscale(100%);
+}
+
+.about-partners {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .about-partners {
+    display: none !important;
+  }
 }
 
 .last-section {
@@ -561,30 +567,43 @@ blockquote {
 }
 
 footer {
-  filter: invert(100%);
   margin-top: 0;
   height: 100px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  column-gap: 200px;
-  padding-left: 100px;
+  column-gap: 10px;
 }
 footer h6 {
   color: black;
-  font-size: 20px;
+  font-size: 10px;
   margin: 0;
 }
 footer .footer-text {
   display: flex;
   flex-direction: column;
-  min-width: 484px;
-  width: 500px;
 }
 footer .footer-text p {
   margin: 0;
+  font-size: 9px;
+}
+
+#black {
+  background-color: white;
+  color: black;
+}
+#black h6 {
+  color: black;
+}
+@media only screen and (min-width: 768px) {
+  #black {
+    background-color: #272a31;
+    color: white;
+  }
+  #black h6 {
+    color: white;
+  }
 }
 
 .white-box {
@@ -607,8 +626,10 @@ footer .footer-text p {
   text-align: center;
 }
 
-.scale-2 {
-  transform: scale(2);
+@media only screen and (min-width: 768px) {
+  .scale-2 {
+    transform: scale(2);
+  }
 }
 
 .contact-box {

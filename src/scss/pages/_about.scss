@@ -21,7 +21,9 @@
 }
 
 .scale-2 {
-  transform: scale(2);
+  @media only screen and (min-width: $desktop-size) {
+    transform: scale(2);
+  }
 }
 
 .contact-box {

@@ -88,30 +88,32 @@ const array = [
 
 const speakerSection = document.querySelector('.speakers');
 
-for (let i = 0; i < array.length; i += 1) {
-  speakerSection.innerHTML += `
-  <!-- speaker card -->
-          <div class="speaker-card">
-            <div class="upper-part">
-              <div class="speaker-image-container">
-                <div class="speaker-bg"></div>
-                <img class="speaker-image" src="${array[i].image}" alt="${array[i].name} image" height="225" width="225">
+if (speakerSection != null) {
+  for (let i = 0; i < array.length; i += 1) {
+    speakerSection.innerHTML += `
+    <!-- speaker card -->
+            <div class="speaker-card">
+              <div class="upper-part">
+                <div class="speaker-image-container">
+                  <div class="speaker-bg"></div>
+                  <img class="speaker-image" src="${array[i].image}" alt="${array[i].name} image" height="225" width="225">
+                </div>
+                <div class="speakers-headings">
+                  <h4 class="speaker-name">${array[i].name}</h4>
+                  <h5 class="speaker-company"> ${array[i].company}</h5>
+                  <div class="line desktop"></div>
+                  <p class="speaker-introduction-desktop">
+                  ${array[i].description}
+                  </p>
+                </div>
               </div>
-              <div class="speakers-headings">
-                <h4 class="speaker-name">${array[i].name}</h4>
-                <h5 class="speaker-company"> ${array[i].company}</h5>
-                <div class="line desktop"></div>
-                <p class="speaker-introduction-desktop">
+              <div class="lower-part">
+                <p class="speaker-introduction-mobile">
                 ${array[i].description}
                 </p>
               </div>
             </div>
-            <div class="lower-part">
-              <p class="speaker-introduction-mobile">
-              ${array[i].description}
-              </p>
-            </div>
-          </div>
-          <!-- speaker card -->
-  `;
+            <!-- speaker card -->
+    `;
+  }
 }

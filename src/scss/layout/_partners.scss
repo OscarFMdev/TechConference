@@ -1,9 +1,7 @@
 @import '../base/variables';
 #partners {
   background-color: $black;
-  height: 50vh;
   width: 100%;
-  min-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,19 +9,21 @@
     color: white;
     margin-bottom: 15px;
   }
-  div {
-    margin-bottom: 50px;
-  }
   .partners-logos {
     flex-wrap: wrap;
     display: flex;
     column-gap: 30px;
     align-items: center;
     justify-content: center;
-    height: 200px;
     img {
       transform: scale(0.75);
       filter: grayscale(100%);
     }
+  }
+}
+.about-partners {
+  display: block;
+  @media only screen and (min-width: $desktop-size) {
+    display: none !important;
   }
 }
