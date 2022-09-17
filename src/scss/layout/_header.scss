@@ -1,0 +1,121 @@
+@import '../base/variables';
+
+#header {
+  background-image: url($mobile-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: $desktop-size) {
+    background-image: url($desktop-bg);
+    height: 97vh;
+    justify-content: center;
+  }
+}
+
+blockquote {
+  color: $orange;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  text-align: center;
+  margin-left: 9px;
+  margin-right: 5px;
+  justify-self: baseline;
+
+  @media only screen and (min-width: $desktop-size) {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.header {
+  font-family: $header-font;
+  font-size: 3em;
+  background: #ff4500;
+  background: linear-gradient(to right, hsl(21, 100%, 50%, 1) 39%, rgba(206, 18, 18, 0.77) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 0;
+
+  @media only screen and (min-width: $desktop-size) {
+    margin-bottom: 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  span {
+    background-image: url($header-bg);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1em;
+    font-weight: bolder;
+
+    @media only screen and (min-width: $desktop-size) {
+      font-size: 80px;
+    }
+  }
+
+  @media only screen and (min-width: $desktop-size) {
+    font-size: 80px;
+    width: 600px;
+  }
+}
+
+.introduction {
+  text-align: justify;
+  background-color: $gray;
+  filter: brightness(115%);
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  min-width: 200px;
+
+  p {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: $desktop-size) {
+    font-size: 20px;
+  }
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  background-color: $gray;
+  filter: brightness(115%);
+  padding: 0 10px 15px 0;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid white;
+  min-width: 500px;
+
+  @media only screen and (min-width: $desktop-size) {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .date {
+    font-weight: bolder;
+    margin-bottom: 7px;
+  }
+
+  .salon {
+    margin: 0;
+  }
+}

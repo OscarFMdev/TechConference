@@ -1,0 +1,43 @@
+@import './variables';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+.desktop {
+  visibility: hidden;
+
+  @media screen and (min-width: $desktop-size) {
+    visibility: visible;
+  }
+}
+
+.mobile {
+  visibility: visible;
+
+  @media screen and (min-width: $desktop-size) {
+    visibility: hidden !important;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 20px;
+  background-color: $orange;
+}

@@ -1,0 +1,138 @@
+@import '../base/variables';
+
+.white-box {
+  background-color: white;
+  filter: brightness(115%);
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 16px 5px;
+
+  @media only screen and (min-width: $desktop-size) {
+    margin: 85px;
+  }
+}
+
+.scale-2 {
+  @media only screen and (min-width: $desktop-size) {
+    transform: scale(2);
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-about {
+    text-align: center;
+  }
+
+  .email {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+}
+
+#about-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  background-size: cover;
+
+  @media only screen and (min-width: $desktop-size) {
+    height: auto;
+  }
+
+  .program-heading {
+    text-align: center;
+    width: 200px;
+  }
+
+  .section-divider {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin-top: 20px;
+  }
+
+  .past-conferences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+
+    .conferences-container {
+      .container {
+        position: relative;
+
+        .text-container {
+          .img-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: white;
+          }
+
+          .img-header {
+            font-size: 30px;
+            top: 30%;
+            font-weight: 700;
+          }
+
+          .img-place {
+            font-size: 27px;
+            min-width: 202.5px;
+          }
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+
+      .bg {
+        background-color: red;
+        background-size: cover;
+        object-fit: cover;
+
+        img {
+          overflow: hidden;
+          mix-blend-mode: darken;
+          width: 90vw;
+          height: auto;
+          min-width: 342px;
+          max-width: 352px;
+
+          @media only screen and (min-width: $desktop-size) {
+            width: 40vw;
+          }
+        }
+
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+
+      @media only screen and (min-width: $desktop-size) {
+        flex-direction: row;
+        max-width: 1100px;
+      }
+    }
+  }
+}

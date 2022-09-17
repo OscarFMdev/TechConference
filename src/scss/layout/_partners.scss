@@ -1,0 +1,35 @@
+@import '../base/variables';
+
+#partners {
+  background-color: $black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .partners-heading {
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .partners-logos {
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transform: scale(0.75);
+      filter: grayscale(100%);
+    }
+  }
+}
+
+.about-partners {
+  display: block;
+
+  @media only screen and (min-width: $desktop-size) {
+    display: none !important;
+  }
+}

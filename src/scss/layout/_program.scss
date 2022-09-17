@@ -1,0 +1,128 @@
+@import '../base/variables';
+
+#program {
+  background-size: cover;
+  background-color: $program-bg;
+
+  @media only screen and (min-width: $desktop-size) {
+    height: 50vh;
+  }
+
+  .cross-bg {
+    background-image: url($bg-pattern);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+
+    .line {
+      margin-top: 15px;
+    }
+
+    @media only screen and (min-width: $desktop-size) {
+      height: 50vh;
+
+      .line {
+        margin-top: 15px;
+      }
+    }
+
+    .program-button {
+      background-color: $orange;
+      text-decoration: none;
+      border: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+
+      @media only screen and (min-width: $desktop-size) {
+        background-color: transparent;
+      }
+    }
+
+    .program-link {
+      color: white;
+      text-decoration: none;
+      min-width: 133.35px;
+      max-height: 16px;
+      display: block;
+
+      @media only screen and (min-width: $desktop-size) {
+        padding-top: 55px;
+        text-decoration: underline;
+        font-size: 20px;
+      }
+    }
+
+    .program-link:visited {
+      @media only screen and (min-width: $desktop-size) {
+        color: white;
+        padding: 35px 0;
+      }
+    }
+  }
+
+  .program-heading {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 30px;
+  }
+}
+
+.programs-container {
+  display: grid;
+  margin-top: 60px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: minmax(370px, 500px);
+
+  @media only screen and (min-width: $desktop-size) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: flex-start;
+    max-width: 1000px;
+  }
+
+  img {
+    justify-self: center;
+  }
+
+  .program-card {
+    display: grid;
+    justify-self: center;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: gray, $alpha: 0.4);
+    height: 90%;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+
+      .program-card:nth-child(4) {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .program-card-heading {
+      margin: 0;
+      align-self: center;
+      color: $orange !important;
+      font-weight: 700 !important;
+    }
+
+    .program-desc {
+      color: white;
+    }
+  }
+}

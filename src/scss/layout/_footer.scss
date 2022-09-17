@@ -1,0 +1,49 @@
+@import '../base/variables';
+
+.last-section {
+  height: 100px;
+}
+
+footer {
+  margin-top: 0;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  h6 {
+    color: black;
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+      font-size: 9px;
+    }
+  }
+}
+
+#black {
+  background-color: white;
+  color: black;
+
+  h6 {
+    color: black;
+  }
+
+  @media only screen and (min-width: $desktop-size) {
+    background-color: $black;
+    color: white;
+
+    h6 {
+      color: white;
+    }
+  }
+}

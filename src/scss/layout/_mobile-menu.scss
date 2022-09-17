@@ -1,0 +1,27 @@
+@import '../base/variables';
+
+.mobile-menu {
+  visibility: hidden;
+
+  a {
+    text-decoration: none;
+    color: $orange;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+    margin-top: 50px;
+  }
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 5;
+  padding-left: 30px;
+  background-color: $black;
+  opacity: 0.9;
+}

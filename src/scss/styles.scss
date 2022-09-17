@@ -1,3 +1,11 @@
-@use 'header';
-
-
+@import './base/globals';
+@import './base/icons';
+@import './layout/top-section';
+@import './layout/mobile-menu';
+@import './layout/nav-bar';
+@import './layout/header';
+@import './layout/program';
+@import './layout/speakers';
+@import './layout/partners';
+@import './layout/footer';
+@import './pages/about';

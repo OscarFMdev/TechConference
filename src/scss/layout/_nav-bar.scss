@@ -1,0 +1,61 @@
+@import '../base/variables';
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  justify-content: space-around;
+  align-items: center;
+
+  @media only screen and (min-width: $desktop-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    margin: 10px 15% 0 7%;
+  }
+
+  ul {
+    display: none;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: flex;
+      list-style: none;
+      column-gap: 30px;
+      padding-left: 0;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        a:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    justify-self: flex-start;
+    margin-left: 10px;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: none;
+    }
+  }
+
+  .logo {
+    justify-self: auto;
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.past-conferences {
+  min-width: 120px;
+}

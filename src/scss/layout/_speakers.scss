@@ -1,0 +1,133 @@
+@import '../base/variables';
+
+#speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakers {
+  @media only screen and (min-width: $desktop-size) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 200px;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    margin: 0 10%;
+  }
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 5%;
+  align-self: center;
+  flex: 1;
+
+  @media only screen and (min-width: $desktop-size) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
+
+  .upper-part {
+    display: flex;
+    min-width: 255px;
+
+    @media only screen and (min-width: $desktop-size) {
+      height: auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .lower-part {
+    margin-top: 0;
+
+    .speaker-introduction-mobile {
+      margin-top: 0;
+      display: block;
+      min-width: 250px;
+      margin-left: 20px;
+
+      @media only screen and (min-width: $desktop-size) {
+        display: none;
+      }
+    }
+  }
+
+  .speakers-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .speaker-introduction-desktop {
+      display: none;
+
+      @media only screen and (min-width: $desktop-size) {
+        display: block;
+        min-width: 287px;
+        max-width: 555px;
+      }
+    }
+
+    .speaker-name {
+      font-weight: 400;
+      margin-bottom: 5px;
+      width: 80px;
+    }
+
+    .speaker-company {
+      font-weight: 400;
+      margin-top: 0;
+      color: $orange;
+    }
+  }
+}
+
+.speaker-image-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+
+  @media only screen and (min-width: $desktop-size) {
+    max-height: 350px;
+    min-height: 265px;
+    width: 700px;
+    min-width: 280px;
+    max-width: 276px;
+  }
+
+  .speaker-bg {
+    background-image: url($speaker-bg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: -1;
+
+    @media only screen and (min-width: $desktop-size) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .speaker-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 125px;
+    width: 125px;
+
+    @media only screen and (min-width: $desktop-size) {
+      top: 40px;
+      left: 40px;
+      height: 225px;
+      width: 225px;
+    }
+  }
+}
